@@ -39,9 +39,9 @@ return {
         end,
       })
 
-      -- basedpyright + ruff aren't Mason-installed (see ensure_installed comment),
-      -- so mason-lspconfig won't auto-enable them. Enable them explicitly from PATH.
-      vim.lsp.enable({ "basedpyright", "ruff" })
+      -- basedpyright + ruff + v_analyzer aren't Mason-installed (see ensure_installed
+      -- comment), so mason-lspconfig won't auto-enable them. Enable them explicitly from PATH.
+      vim.lsp.enable({ "basedpyright", "ruff", "v_analyzer" })
 
       vim.diagnostic.config({
         virtual_text = true,
